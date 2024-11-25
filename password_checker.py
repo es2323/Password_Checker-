@@ -31,13 +31,14 @@ def check_password_breach(password):
         return "Error checking password."
 
 def main():
-    password = input("Enter your password: ")
-    
-    # First check password strength
-    print(check_password_strength(password))
-    
-    # Then check if the password has been breached
-    print(check_password_breach(password))
+    while True:
+        password = input("Enter your password (or type 'exit' to quit): ")
+        if password.lower() == "exit":
+            print("Goodbye!")
+            break
+        print(check_password_strength(password))
+        print(check_password_breach(password))
+
 
 # Run the main function
 if __name__ == "__main__":

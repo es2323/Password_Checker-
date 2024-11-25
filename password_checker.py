@@ -34,7 +34,7 @@ def main():
     while True:
         password = input("Enter your password (or type 'exit' to quit): ")
         if password.lower() == "exit":
-            print("Goodbye!")
+            print("Goodbye bro!")
             break
         print(check_password_strength(password))
         print(check_password_breach(password))

@@ -30,6 +30,11 @@ def check_password_breach(password):
     else:
         return "Error checking password."
 
+def save_to_file(password, result):
+    with open("breach_results.txt", "a") as file:
+        file.write(f"Password: {password}, Result: {result}\n")
+
+
 def main():
     while True:
         password = input("Enter your password (or type 'exit' to quit): ")

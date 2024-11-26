@@ -8,3 +8,4 @@ Password: exit , Result: This password has not been exposed in any known breach.
 Password: "exit" , Result: This password has not been exposed in any known breach.
 Password: & C:/msys64/ucrt64/bin/python.exe c:/Users/enosh/Desktop/CODE/PasswordSC/password_checker.py, Result: This password has not been exposed in any known breach.
 Password: hduhduhudh6876^*&^HIUH, Result: This password has not been exposed in any known breach.
+Password: 12345678910111213, Result: This password has been exposed in a breach. Please choose another one.

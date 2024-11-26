@@ -37,12 +37,24 @@ def save_to_file(password, result):
 
 def main():
     while True:
-        password = input("Enter your password (or type 'exit' to quit): ")
+        password = input("Enter your password (or type 'exit' to quit): ").strip()
+        
+        # Check if the user wants to exit
         if password.lower() == "exit":
-            print("Goodbye bro!")
+            print("Goodbye!")
             break
-        print(check_password_strength(password))
-        print(check_password_breach(password))
+        
+        # Check password strength
+        strength_result = check_password_strength(password)
+        print(strength_result)
+        
+        # Check if password has been breached
+        breach_result = check_password_breach(password)
+        print(breach_result)
+        
+        # Save the breach result to a file
+        save_to_file(password, breach_result)
+
 
 
 # Run the main function

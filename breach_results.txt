@@ -1,0 +1,10 @@
+Password: 232736287362873823, Result: This password has not been exposed in any known breach.
+Password: Lilyard34343&**(, Result: This password has not been exposed in any known breach.
+Password: exit , Result: This password has not been exposed in any known breach.
+Password: exit , Result: This password has not been exposed in any known breach.
+Password: 433434343489374893, Result: This password has not been exposed in any known breach.
+Password: Lilyatess67687^&^, Result: This password has not been exposed in any known breach.
+Password: exit , Result: This password has not been exposed in any known breach.
+Password: "exit" , Result: This password has not been exposed in any known breach.
+Password: & C:/msys64/ucrt64/bin/python.exe c:/Users/enosh/Desktop/CODE/PasswordSC/password_checker.py, Result: This password has not been exposed in any known breach.
+Password: hduhduhudh6876^*&^HIUH, Result: This password has not been exposed in any known breach.

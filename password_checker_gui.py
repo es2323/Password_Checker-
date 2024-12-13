@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import ttk 
 from tkinter import StringVar, IntVar
 import random
 import string
@@ -8,17 +9,25 @@ import re
 
 # Function to check password strength
 def check_password_strength(password):
-    if len(password) < 8:
-        return "Weak: Password must be at least 8 characters long."
-    if not re.search("[a-z]", password):
-        return "Weak: Password must contain at least one lowercase letter."
-    if not re.search("[A-Z]", password):
-        return "Weak: Password must contain at least one uppercase letter."
-    if not re.search("[0-9]", password):
-        return "Weak: Password must contain at least one number."
-    if not re.search("[!@#$%^&*(),.?\":{}|<>]", password):
-        return "Weak: Password must contain at least one special character."
-    return "Strong: Your password meets all the criteria."
+    score = 0  # Initialize score
+
+    if len(password) >= 8:
+        score += 1
+    if re.search("[a-z]", password):
+        score += 1
+    if re.search("[A-Z]", password):
+        score += 1
+    if re.search("[0-9]", password):
+        score += 1
+    if re.search("[!@#$%^&*(),.?\":{}|<>]", password):
+        score += 1
+
+    if score == 5:
+        return "Strong", 100
+    elif score == 4:
+        return "Medium", 60
+    else:
+        return "Weak", 30
 
 # Function to check password breach
 def check_password_breach(password):
@@ -94,7 +103,11 @@ toggle_button = tk.Button(password_frame, text="Show", command=toggle_password_v
 toggle_button.pack(side="left")
 
 tk.Label(root, textvariable=feedback, wraplength=300, justify="left").pack()
+strength_label = tk.Label(root, text="Strength: ")
+strength_label.pack()
 
+progress_bar = ttk.Progressbar(root, orient="horizontal", length=300, mode="determinate", maximum=100)
+progress_bar.pack()
 # Password Generator Options
 tk.Label(root, text="Password Length:").pack()
 tk.Spinbox(root, from_=8, to=32, textvariable=password_length).pack()

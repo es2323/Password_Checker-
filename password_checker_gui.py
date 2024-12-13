@@ -1,3 +1,4 @@
+from password_checker import check_password_strength, check_password_breach
 import tkinter as tk
 from tkinter import ttk 
 from tkinter import StringVar, IntVar

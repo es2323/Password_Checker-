@@ -55,8 +55,3 @@ def main():
         # Save the breach result to a file
         save_to_file(password, breach_result)
 
-
-
-# Run the main function
-if __name__ == "__main__":
-    main()

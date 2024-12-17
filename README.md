@@ -1,4 +1,4 @@
-# Password Checker with GUI and Random Password Generator
+# Password Analyser with GUI and Random Password Generator
 This project is a comprehensive Password Checker tool designed with both a command-line interface (CLI) and a Graphical User Interface (GUI). It includes features to evaluate password strength, check for breaches using the Have I Been Pwned API, generate secure passwords, and provide a user-friendly visual interface.
 
 # Features
